@@ -1,0 +1,53 @@
+.container {
+  font-family: sans-serif;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.reg-form {
+  margin: auto;
+  padding: 20px;
+  width: 360px;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.row {
+  margin: 10px 0;
+  display: flex;
+}
+
+.label {
+  width: 40%;
+}
+
+.select {
+  padding: 1px 5px;
+}
+
+.box-label {
+  font-size: smaller;
+}
+
+.btns {
+  justify-content: center;
+  gap: 20px;
+}
+
+:is(input, textarea, select):user-valid {
+  background-color: #8df364;
+}
+:not(form):user-invalid {
+  background-color: #f36464;
+}
+
+textarea {
+  resize: none;
+}
